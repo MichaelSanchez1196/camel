@@ -283,7 +283,7 @@ void bandit(int& water)
 void trapHole(bool& boolChoice)
 {
 	int num;
-	num = rand() % 30 + 1; // one in 30 chance of finding an oasis	
+	num = rand() % 30 + 1; // one in 30 chance of falling in a hole
 	
 	if(num == 22)
 	{	
@@ -296,10 +296,10 @@ void trapHole(bool& boolChoice)
 void scorpion(int& camelT)
 {
 	int num, tiredness;
-	tiredness = rand() % 5 +1;
-	num = rand() % 25 + 1; // one in 25 chance of finding an oasis	
+	tiredness = rand() % 5 +1; // random number to add to camel tiredness
+	num = rand() % 20 + 1; // one in 20 chance of gettin bit by a scorpion
 	
-	if(num == 17)
+	if(num == 7)
 	{	
 		cout << "Your Camel Has Been Bitten by A Scorpion.\n";
 		cout << "Your Camels Tiredness has increased.\n";

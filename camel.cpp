@@ -32,7 +32,7 @@ int main()
 	do // beginning of game 
 	{
 
-	int canteens = 10, tired = 0; // initializes everything to starting values
+	int canteens = 3, tired = 0; // initializes everything to starting values
 	int camelD = 0, thirst = 0;
 	int nativeD = -20;
 	bool done = false;
@@ -268,7 +268,7 @@ void oasis(int& camelT, int& playerT, int& water) // rare oasis function
 void bandit(int& water)
 {
 	int num, waterLeft;
-	waterLeft = rand() % 8 + 1; // random number of drinks taken away
+	waterLeft = rand() % 3 + 1; // random number of drinks taken away
 	num = rand() % 20 + 1; // one in 20 chance of finding an oasis	
 	
 	if(num == 3)
